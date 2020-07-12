@@ -1,5 +1,7 @@
 'use strict';
 
+const div = document.querySelector('div');
+
 class Storage {
 
     constructor() {
@@ -39,7 +41,8 @@ class Storage {
     getStorage() {
 
         if (localStorage.getItem("localStorage") != null) {
-            alert(`Zapisany localStorage to: ${localStorage.getItem("localStorage")}`);
+
+            div.innerText = `Zapisany localStorage to ${localStorage.getItem("localStorage")}`;
         }
 
 
@@ -48,7 +51,7 @@ class Storage {
     removeStorage() {
 
         localStorage.removeItem("localStorage");
-
+        div.innerText = '';
     }
 
 }
