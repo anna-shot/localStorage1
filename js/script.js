@@ -40,7 +40,7 @@ class Storage {
 
     getStorage() {
 
-        if (localStorage.getItem("localStorage") != null) {
+        if (localStorage.getItem("localStorage")) {
 
             div.innerText = `Zapisany localStorage to ${localStorage.getItem("localStorage")}`;
         }
